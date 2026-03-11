@@ -19,3 +19,9 @@ class OffshoreWindTurbine:
             return True 
         else: 
             return False    
+
+
+if __name__ == "__main__":
+    turbine1 = OffshoreWindTurbine("Vestas", "V164", "monopile", 8.0)
+    print(turbine1)
+    print("Suitable for depth 25m?:", turbine1.is_suitable_for_depth(25))
